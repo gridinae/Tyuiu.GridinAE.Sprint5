@@ -27,7 +27,6 @@ for (int i = 0; i < matrix.GetLength(0); i++)
         Console.Write($"Введите элемент №({i}, {j}): ");
         matrix[i, j] = Convert.ToInt32(Console.ReadLine());
     }
-
 }
 
 Console.WriteLine("************************************************************************");
