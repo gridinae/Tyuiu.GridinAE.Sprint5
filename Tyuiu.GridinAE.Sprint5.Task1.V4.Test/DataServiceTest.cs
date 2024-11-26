@@ -8,17 +8,8 @@ public class DataServiceTest
     [TestMethod]
     public void TestSaveToFileTextData()
     {
-        string expected = @"  x |  f(x) 
------------
- -3 | -7,22
- -2 | -5,04
- -1 |  0
-  0 | -0,3
-  1 |  2,57
-  2 |  6,4
-  3 |  10,04
-";
-        CollectionAssert.AreEqual(expected.ToCharArray(), new DataService().SaveToFileTextData(-3, 3).ToCharArray());
+        string expected = "-15,44\n-10,93\n-7,22\n-5,04\n0\n-0,3\n2,57\n6,4\n10,04\n12,72\n14,68";
+        CollectionAssert.AreEqual(expected.ToCharArray(), new DataService().SaveToFileTextData(-5, 5).ToCharArray());
 
     }
 }

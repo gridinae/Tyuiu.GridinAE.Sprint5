@@ -6,7 +6,7 @@ public class DataService : ISprint5Task1V4
 {
     public string SaveToFileTextData(int startValue, int stopValue)
     {
-        string output = "  x |  f(x) \n-----------\n";
+        string output = string.Empty;
         for (int i = startValue; i <= stopValue; i++)
         {
             double value;
@@ -14,7 +14,7 @@ public class DataService : ISprint5Task1V4
                 value = Math.Round(f(i), 2);
             else
                 value = 0;
-            output += (i < 0 ? " " : "  ") + $"{i} |" + (value < 0 ? " " : "  ") + value + '\n';
+            output += value + '\n';
         }
 
         string path = Path.GetTempFileName();
