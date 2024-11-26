@@ -12,7 +12,7 @@ public class DataService : ISprint5Task2V18
         {
             for (int j = 0; j < matrix.GetLength(1) - 1; j++)
             {
-                output += (matrix[i, j] <= 0 ? "0" : "1") + ",";
+                output += (matrix[i, j] <= 0 ? "0" : "1") + ";";
             }
             output += matrix[i, matrix.GetLength(1) - 1] + Environment.NewLine;
         }
