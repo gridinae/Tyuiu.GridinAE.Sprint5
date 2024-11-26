@@ -17,7 +17,7 @@ public class DataService : ISprint5Task1V4
             output += value + "\n";
         }
 
-        output = output[..^2];
+        output = output[..^1];
 
         string path = Path.GetTempFileName();
 
