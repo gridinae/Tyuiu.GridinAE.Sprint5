@@ -14,7 +14,7 @@ public class DataService : ISprint5Task1V4
                 value = Math.Round(f(i), 2);
             else
                 value = 0;
-            output += value + '\n';
+            output += value + "\n";
         }
 
         string path = Path.GetTempFileName();
