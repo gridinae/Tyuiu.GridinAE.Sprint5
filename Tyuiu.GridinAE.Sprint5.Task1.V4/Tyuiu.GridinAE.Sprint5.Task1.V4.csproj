@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.GridinAE.Sprint5.Task1.V4.Lib\Tyuiu.GridinAE.Sprint5.Task1.V4.Lib.csproj" />
+  </ItemGroup>
+
+</Project>
