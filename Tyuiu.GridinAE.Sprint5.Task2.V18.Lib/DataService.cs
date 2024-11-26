@@ -14,7 +14,7 @@ public class DataService : ISprint5Task2V18
             {
                 output += (matrix[i, j] <= 0 ? "0" : "1") + ";";
             }
-            output += matrix[i, matrix.GetLength(1) - 1] + Environment.NewLine;
+            output += (matrix[i, matrix.GetLength(1) - 1] <= 0 ? "0" : "1") + Environment.NewLine;
         }
 
         output = output.TrimEnd();
