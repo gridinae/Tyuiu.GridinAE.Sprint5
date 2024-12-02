@@ -6,8 +6,8 @@ public class DataService : ISprint5Task4V12
 {
     public double LoadFromDataFile(string path)
     {
-        Double.TryParse(File.ReadAllText(path), out double x);
+        double x = Convert.ToDouble(File.ReadAllText(path).Replace('.', ','));
         double y = Math.Cos(Math.Pow(x, 3)) + x / 2;
-        return y;
+        return Math.Round(y, 3);
     }
 }
