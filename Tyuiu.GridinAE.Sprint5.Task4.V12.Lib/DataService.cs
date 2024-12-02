@@ -11,3 +11,4 @@ public class DataService : ISprint5Task4V12
         return Math.Round(y, 3);
     }
 }
+
