@@ -18,3 +18,4 @@ Console.WriteLine("* РЕЗУЛЬТАТ:                                        
 Console.WriteLine("************************************************************************");
 
 Console.WriteLine(new DataService().LoadFromDataFile(@"C:\DataSprint5\InPutDataFileTask4V12.txt"));
+Console.ReadLine();
