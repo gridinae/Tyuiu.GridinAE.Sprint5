@@ -15,11 +15,7 @@ public class DataService : ISprint5Task3V12
         {
             bw.Write(y);
         }
-        Console.WriteLine($"Значение выражения сохранено в файл {path}");
 
-        using (var br = new BinaryReader(File.Open(path, FileMode.Open)))
-        {
-            return br.ReadDouble().ToString();
-        }
+        return path;
     }
 }

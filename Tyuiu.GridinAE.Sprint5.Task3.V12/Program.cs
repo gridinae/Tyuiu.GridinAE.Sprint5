@@ -16,6 +16,10 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                           *");
 Console.WriteLine("************************************************************************");
 
-var result = new DataService().SaveToFileTextData(3);
+double result;
+using (var br = new BinaryReader(File.Open(new DataService().SaveToFileTextData(3), FileMode.Open)))
+{
+    result = br.ReadDouble();
+}
 Console.WriteLine(result);
 Console.ReadLine();
