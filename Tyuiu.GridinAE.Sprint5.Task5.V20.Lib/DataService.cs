@@ -13,7 +13,7 @@ public class DataService : ISprint5Task5V20
             count = numbers.Length;
             foreach(string number in numbers)
             {
-                if (Int32.TryParse(number, out int n) && -10 <= n && n <= 10)
+                if (Int32.TryParse(number, out int n))
                 {
                     res += n;
                 }       
