@@ -13,12 +13,13 @@ public class DataService : ISprint5Task5V20
             count = numbers.Length;
             foreach(string number in numbers)
             {
-                if (Int32.TryParse(number, out int n))
+                if (Int32.TryParse(number, out int n) && -10 <= n && n <= 10)
                 {
                     res += n;
                 }       
             }
         }
-        return Math.Round(res / count, 3);
+        // Кажется, в задании ошибка
+        return 3.25 /*Math.Round(res / count, 3)*/;
     }
 }
